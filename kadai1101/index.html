@@ -6,23 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    .q1 {
+    .q1{
         position: relative;
-        padding-left: 40px; /* 矢印のスペースを確保 */
-      }
-       
-      .q1::before {
+        padding-left: 40px;
+    }
+    .q1::before{
         content: '';
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 20px; /* 矢印の幅 */
-        height: 20px; /* 矢印の高さ */
-        background-color: #333; /* 矢印の色 */
-        border-radius: 50%; /* 丸みを持たせる */
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* 三角形の矢印を作成 */
-      }
+        left: 10px;
+        transform: translateY(-50%)
+        rotate(45deg);
+        width: 20px;
+        height: 20px;
+        background-color: #333;
+        border-radius: 50%;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
     body{
         background-color:#fff;
         color:#666;
