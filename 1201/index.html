@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Practice</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+
+        section{
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        @media (min-width: 600px){
+            .container{
+                display:flex;
+                flex-wrap: wrap;
+            }
+            section{
+                flex: 1;
+                margin: 10px;
+            }
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Design Practice</h1>
+
+    <div class="container">
+        <section>
+            <h2>Section 1</h2>
+        </section>
+    </div>
+</body>
+</html>
