@@ -1,146 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-    font-family: 'Arial', sans-serif;
+    <title>岐阜協立大学 経営学部 情報メディア学科</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background-color: #f4f4f4;
     color: #333;
 }
- 
+
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #0044cc;
+    color: white;
+    padding: 1em 0;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
- 
+
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
- 
+
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 1em;
 }
- 
+
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
- 
+
 nav ul li a:hover {
-    color: #fcb69f;
+    color: #ffcc00;
 }
- 
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 section {
-    padding: 2rem;
-    margin: 1rem 0;
-    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2em;
+    background: white;
+    padding: 1.5em;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
- 
+
+h2 {
+    color: #0044cc;
+}
+
 footer {
+    background-color: #0044cc;
+    color: white;
     text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
- 
-form {
-    display: flex;
-    flex-direction: column;
+
+footer p {
+    margin: 0;
 }
- 
-form label {
-    margin: 0.5rem 0 0.2rem;
-}
- 
-form input, form textarea {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
- 
-form button {
-    padding: 0.7rem;
-    background: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
- 
-form button:hover {
-    background: #fcb69f;
-}
- 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-    </style>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>岐阜協立大学経営学部情報メディア学科</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+</style>
 <body>
     <header>
-        <h1>岐阜協立大学経営学部情報メディア学科</h1>
+        <h1>岐阜協立大学 経営学部 情報メディア学科</h1>
         <nav>
             <ul>
                 <li><a href="#about">学科紹介</a></li>
-                <li><a href="#curriculum">カリキュラム</a></li>
+                <li><a href="#courses">コース</a></li>
                 <li><a href="#contact">お問い合わせ</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about">
-        <h2>学科紹介</h2>
-        <p>情報メディア学科では、最新の情報技術とメディアの知識を学びます。</p>
-    </section>
-    <section id="curriculum">
-        <h2>カリキュラム</h2>
-        <p>多様なカリキュラムを通じて、実践的なスキルを身につけます。</p>
-    </section>
-    <section id="contact">
-        <h2>お問い合わせ</h2>
-        <form>
-            <label for="name">名前:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">メールアドレス:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">メッセージ:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">送信</button>
-        </form>
-    </section>
+    <main>
+        <section id="about">
+            <h2>学科紹介</h2>
+            <p>情報メディア学科では、最新の情報技術とメディアの知識を学びます。</p>
+        </section>
+        <section id="courses">
+            <h2>コース</h2>
+            <ul>
+                <li>プログラミング基礎</li>
+                <li>データベース管理</li>
+                <li>Webデザイン</li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        <p>© 2024 岐阜協立大学経営学部情報メディア学科</p>
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <p>Email: info@gifu-u.ac.jp</p>
+        </section>
     </footer>
-</body>
-</html>
 </body>
 </html>
